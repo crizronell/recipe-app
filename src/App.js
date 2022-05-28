@@ -1,9 +1,13 @@
-import MainCourse from "./components/MainCourse/MainCourse";
+import Pages from "./pages/Pages"
+import Header from "./components/Header/Header";
+import {BrowserRouter as Router} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <MainCourse />
+      <Router>
+        <Header />
+        <Pages/>
+      </Router>
     </div>
   );
 }
