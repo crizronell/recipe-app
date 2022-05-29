@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Home/Home";
 import RecipeDetails from "./RecipeDetails/RecipeDetails";
+import Searched from "./Searched/Searched";
 import { Route, Routes } from "react-router-dom";
 
 function pages() {
@@ -8,6 +9,7 @@ function pages() {
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/recipe/:id" element={<RecipeDetails />}></Route>
+      <Route path="/searched/:search" element={<Searched />}></Route>
      
     </Routes>
   );

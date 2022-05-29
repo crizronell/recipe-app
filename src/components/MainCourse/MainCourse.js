@@ -27,7 +27,7 @@ function MainCourse() {
 
   return (
     <>
-      <div className="container mx-auto p-4 bg-slate-300">
+      <div className="container mx-auto p-4 mt-4 ">
          <p className="text-3xl font-mono font-bold sm:text-2xl">Main Course</p>
         <Splide  
           options={{

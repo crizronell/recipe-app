@@ -5,7 +5,7 @@ import SideDish from '../../components/SideDish/SideDish'
 
 function Home() {
   return (
-    <div className='bg-slate-300'>
+    <div>
     <MainCourse />
     <SideDish />
     </div>
