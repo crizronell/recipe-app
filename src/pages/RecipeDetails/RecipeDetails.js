@@ -8,18 +8,7 @@ function RecipeDetails() {
 
   useEffect(() => {
     const getDetails = async () => {
-      // const check = localStorage.getItem("details");
-      // if (check) {
-      //   setDetails(JSON.parse(check));
-      // } else {
-      //   const data = await fetch(
-      //     `https://api.spoonacular.com/recipes/${params.id}/information?apiKey=1cb4db2658814249899f7c558ef03327`
-      //   );
-      //   const response = await data.json();
-      //   localStorage.setItem("details", JSON.stringify(response));
-      //   console.log(response);
-      //   setDetails(response);
-      // }
+     
 
       const data = await fetch(
             `https://api.spoonacular.com/recipes/${params.id}/information?apiKey=1cb4db2658814249899f7c558ef03327`
@@ -35,7 +24,7 @@ function RecipeDetails() {
 
   return (
     <>
-      <div className=" w-full   grid grid-cols-1  sm:grid-cols-2">
+      <div className=" w-full   grid grid-cols-1  sm:grid-cols-2 mt-4">
         <div className="p-4">
           <img
             src={details.image}
