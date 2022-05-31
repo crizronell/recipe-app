@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 function pages() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/recipe-app" element={<Home />}></Route>
       <Route path="/recipe/:id" element={<RecipeDetails />}></Route>
       <Route path="/searched/:search" element={<Searched />}></Route>
      
